@@ -1,0 +1,125 @@
+.navbar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+}
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.navbar-small-device-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar-large-container {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-small-device-container {
+    display: none;
+  }
+  .navbar-large-container {
+    display: flex block;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+  }
+}
+
+.website-logo {
+  width: 90%;
+  margin-top: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .website-logo {
+    width: 125px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: flex-end;
+    list-style-type: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+.navbar-menu-item {
+  font-family: 'Roboto';
+  text-decoration: none;
+  margin: 10px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.navbar-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logout-large-button {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .logout-large-button {
+    display: block;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #4f46e5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+.navbar-small-device-icons-container {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar-small-device-button {
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 24px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-small-device-link {
+  font-size: 24px;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-small-device-button {
+    display: none;
+  }
+}
